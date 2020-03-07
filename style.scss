@@ -1,0 +1,68 @@
+:root {
+  --background-colour: #000000;
+  --highlight-colour: #a2da61;
+}
+
+@mixin pre {
+  display: block;
+  unicode-bidi: embed;
+  font-family: monospace;
+  white-space: pre;
+}
+
+html {
+  background: var(--background-colour);
+  color: white;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 14px;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 5rem auto;
+  flex-direction: column;
+  max-width: 500px; // use calc here to give a minimum margin
+}
+
+a {
+  text-decoration: none;
+  color: var(--highlight-colour);
+}
+
+a:focus, a:hover{
+	text-decoration: underline;;
+}
+
+.title {
+  font-size: 20px;
+  max-width: 500px;
+  &__display {
+    @include pre;
+    font-size: 11px;
+  }
+}
+
+.main {
+  &__list {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    &__section {
+
+		&--contacts {
+			width: 100%;
+			display: flex;
+			justify-content: space-around;
+		}
+    }
+  }
+}
