@@ -1,2 +1,27 @@
+.pre, .name__formatting {
+  display: block;
+  unicode-bidi: embed;
+  font-family: monospace;
+  white-space: pre;
+}
+
+html {
+  background: #2b2b2b;
+  color: white;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 14px;
+}
+
+body {
+  margin: 50px;
+}
+
+.name {
+  font-size: 20px;
+}
+
+.name__formatting {
+  font-size: 14px;
+}
 
 /*# sourceMappingURL=/style.97fcb138.css.map */
