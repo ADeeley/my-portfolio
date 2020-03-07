@@ -1,5 +1,6 @@
 :root {
   --background-colour: #000000;
+  --highlight-colour: #a2da61;
 }
 
 html {
@@ -13,27 +14,46 @@ body {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  margin: auto;
+  margin: 5rem auto;
   flex-direction: column;
   max-width: 500px;
 }
 
+a {
+  text-decoration: none;
+  color: var(--highlight-colour);
+}
+
+a:focus, a:hover {
+  text-decoration: underline;
+}
+
 .title {
   font-size: 20px;
-  margin-bottom: 2rem;
+  max-width: 500px;
 }
 .title__display {
   display: block;
   unicode-bidi: embed;
   font-family: monospace;
   white-space: pre;
-  font-size: 14px;
+  font-size: 11px;
 }
 
 .main__list {
   list-style: none;
   margin-left: 0;
   padding-left: 0;
+}
+.main__content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.main__content__section--contacts {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
 }
 
 /*# sourceMappingURL=/style.97fcb138.css.map */
