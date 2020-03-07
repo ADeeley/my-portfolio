@@ -1,27 +1,39 @@
-.pre, .name__formatting {
-  display: block;
-  unicode-bidi: embed;
-  font-family: monospace;
-  white-space: pre;
+:root {
+  --background-colour: #000000;
 }
 
 html {
-  background: #2b2b2b;
+  background: var(--background-colour);
   color: white;
   font-family: "Courier New", Courier, monospace;
   font-size: 14px;
 }
 
 body {
-  margin: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin: auto;
+  flex-direction: column;
+  max-width: 500px;
 }
 
-.name {
+.title {
   font-size: 20px;
+  margin-bottom: 2rem;
+}
+.title__display {
+  display: block;
+  unicode-bidi: embed;
+  font-family: monospace;
+  white-space: pre;
+  font-size: 14px;
 }
 
-.name__formatting {
-  font-size: 14px;
+.main__list {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
 }
 
 /*# sourceMappingURL=/style.97fcb138.css.map */
